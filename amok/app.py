@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from .resources.fixtures_mock import amok_router
+from .resources.api import amok_router
 from .resources.calls import calls_router
 
 app = FastAPI(title='Generic Mock')
