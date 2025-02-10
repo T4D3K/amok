@@ -1,0 +1,10 @@
+{
+  "{METHOD};{PATH};{QUERY_PARAMS_STRING};{B64_OF_BODY}": "responses/{FILE_WITH_RESPONSE}.json",
+  "GET;test;;": "responses/ok.json",
+  "GET;test/test2/test3;;": "responses/ok.json",
+  "GET;test;404": "responses/empty_list.json",
+  "GET;test;hello=world&foo=bar;": "responses/hello_foobar.json",
+  "GET;test;foo=bar&hello=world;": "responses/hello_foobar.json",
+  "GET;test;hello=world;": "responses/hello.json",
+  "POST;test;;eyJoZWxsbyI6ICJ3b3JsZCJ9": "responses/it_works.json"
+}
